@@ -2,6 +2,17 @@
     margin: 0%;
     padding: 0%;
     font-family: 'Inter', sans-serif;
+}   
+
+body{
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5)20%, rgba(12, 112, 242, 0)25%), #303030;
+    background-repeat: no-repeat;
+}
+
+:root{
+    --azul-dnc: #0C7CF2;
+    --preto-dnc: #303030;
+    --cinza-dnc: #c9c9c9;
 }
 /*Barra de Navegação Início*/
 #menu{
@@ -15,11 +26,11 @@
 #principal{
     width: 100%;
     height: 100px;
-    background-color: #303030;
+    background-color: var(--preto-dnc);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border bottom: 1px solid #bababa;
+    border: 1px solid #bababa;
 }
 
 #principal div a{
@@ -30,12 +41,12 @@
 }
 
 #principal div a:hover{
-    color: #cccccc;
+    color: var(--cinza-dnc);
 }
 
 #principal button{
     margin-right: 5%;
-    background-color: #0C70F2;
+    background-color: var(--azul-dnc);
     color: white;
     border: none;
     height: 40px;
@@ -46,3 +57,95 @@
     cursor: pointer;
 }
 /*Barra de Navegação Fim*/
+
+/*Seção Principal do Site Início*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+header{
+    color: white;
+    
+}
+
+header h1{
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700px;
+    margin-bottom: 100px;
+}
+
+header .invert{
+    background-color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+/*Seção Principal do Site Fim*/
+
+/*Seção Formulário Início*/
+form{
+    color: white;
+    font-size: 30px;
+    font-weight: 600px;
+    width: 600px;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form input{
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+form label{
+    margin: 10px 0px 10px 0px;
+}
+
+form input::placeholder{
+    color: rgba(57, 57, 57, 0.5);
+}
+
+.checkboxItens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+input[type="checkbox"]{
+    transform: scale(2.0);
+}
+
+input[type="submit"]{
+    background-color: rgba(12, 112, 242, 0.9);
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 32px;
+    margin-top: 100px;
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+}
+/*Seção Formulário Fim*/
+
