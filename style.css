@@ -276,11 +276,19 @@ footer .endereco{
         font-size: 20px;
     }
 
-    .checkboxItens{
-        font-size: 15px;
+    .checkboxItens label{
+        font-size: 17px;
     }
 /*Section Fim*/
+/*Footer Início*/
+    footer .linha1{
+        flex-direction: column;
+    }
 
-
+    footer .endereco{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+/*Footer Fim*/
 }
 /*Responsividade Fim*/
